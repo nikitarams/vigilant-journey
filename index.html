@@ -1,0 +1,241 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" lang="ru" content="Основные блюда и режимы приема пищи для больных диабетом второго типа">
+        <meta name="keywords" content="диабет,прием,пища,больные,блюда">
+        <meta name="robot", content="index,follow">
+        <meta name="application-name" content="FlaskApp">
+        <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='style1.css')}}">
+        <title>FoodSearch</title>
+        <style>
+        H1 {
+                color: #000000;
+                font-size: 70%;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }        
+        p {
+                margin-left: 4%;
+                margin-top: 3%;
+                color: #000000;
+                font-size: 110%;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .query {
+                margin-left:30%;
+                margin-top: 1%;
+                width: 15%;
+                height: 40%;
+        }
+        .submit {
+                height: 40%;
+        }
+        .top {
+                font-size: 120%;
+        }
+        a {
+                text-decoration: none;
+                color: #ffffff;
+                padding: 2px;
+        }
+        a:visited {
+                text-decoration: none;
+                color: #ffffff;
+        }
+        a:hover {
+                text-decoration: none;
+                opacity: 1;
+                color: #d3d3d3;
+        }
+        </style>
+    </head>
+    <body>
+        <div style='position: absolute; left:0%; top:0%; width: 100%; height: 8%; background-color: RGB(36,41,46);'>
+                <img style="position: absolute; left:3%; top:25%;" src="/static/images/rose1.ico">  
+                <a class='top' style="position: absolute; left:7%; top:28%" href="http://127.0.0.1:5000/login">LOG IN</a>
+                <a class='top' style="position: absolute; left:12%; top:28%" href="http://127.0.0.1:5000/signup">SIGN UP</a>
+                <a class='top' style="position: absolute; left:17.4%; top:28%" href="http://127.0.0.1:5000/">DASHBOARD</a>
+                <form method='post' action='/search'>
+                        <input class="query" type='text' name='input_query'  autocomplete="on" spellcheck lang='ru' placeholder="Seacrh here">
+                </form>
+        </div>
+        <div style='position: absolute; top:10%; left:0.5%; box-shadow: 5px 5px 5px rgba(122,122,122,0.5);opacity:0.8;background-color: RGB(36,41,46); height:1920px; width: 25% ; border-radius: 10px 10px 10px 10px;'>
+            <p>
+                <a href="">
+                Алкогольные напитки
+                </a>
+            </p>
+            <p>
+                <a href="">
+                Блюда из картофеля,овощей
+                </a>
+            </p>    
+            <p>
+                <a href="">
+                Блюда из круп
+                </a>
+            </p>
+            <p>
+                <a href="">
+                Блюда из макаронных изделий
+                </a>
+            </p>
+            <p>
+                <a href="">
+                Блюда из мясных продуктов
+                </a>
+            </p>
+	    <p>   
+                <a href="">
+		Блюда из рыбы, морепродуктов и раков 
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Блюда из творога 
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Блюда из яиц 
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Бобовые, орехи 
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Быстрое питание 
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Вспомогательные продукты 
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Гарниры 
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Готовые завтраки
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Грибы
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Диабетические продукты
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Жиры и масла
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Зерно и мука
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Икра и морские продукты
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Колбасы
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Кондитерские изделия
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Конфеты и шоколад
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Молочные продукты
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Мучные изделия
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Мясо и мясные продукты
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Напитки
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Овощи
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Рыба и рыбные продукты
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Сладкие блюда
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Соусы
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Супы
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Сыры
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Фрукты
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Хлеб, выпечка
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Холодные блюда
+	        </a>   
+            </p>
+	    <p>   
+                <a href="">
+		Ягоды , варенье
+	        </a>   
+            </p>
+        </div>
+	<div style='position: absolute; left: 27%; top: 17%; box-shadow: 0px 5px 5px 4px rgba(122,122,122,0.5); opacity:0.8; background-color: lightskyblue; height: 1860; width: 46.5%; border-radius: 10px 10px 10px 10px;'>{% for row in result %}<p>{{row[0]}}</p>{% endfor %}</div>
+	<div style='position: absolute; top:10%; left:75%; box-shadow: -5px 5px 5px rgba(122,122,122,0.5);opacity:0.8;background-color: RGB(36,41,46); height: 1920; width: 24.5%; border-radius: 10px 10px 10px 10px;'><p></p></div>
+    </body>
+</html>
