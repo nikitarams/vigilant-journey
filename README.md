@@ -1,10 +1,21 @@
 # vigilant-journey
 
-/ - оригинальная директория , то , где происходит поиск из БД еды /login - вход по логину и паролю /signup - регистрация пользователя в БД database.db
+Структура папок : 
 
-В оригинале database.db лежала непосредственно рядом с manage.py - файлом запуска , а diacompanion.db лежала на уровень выше
-
-Перемещаться по кнопкам в html разметке - нельзя, только через /login /signup , потому что дизайн очевидно фиговый и все это еще будет перерабатываться
+FFlaskapplication
+  app
+    -static
+      --images
+        ---rose.ico
+      --style.css
+    -templates
+      --index.html
+      --login.html
+      --signup.html
+    -database.db
+    -manage.py
+  venv
+  diacompanion.db
 
 Здесь в отличии от прошлой master версии уже есть мой пользователь в database.db, я смотрю данные обычно через sqlite3 из консоли или DB Browser for SQLite
 
