@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang='ru'>
+    <head>
+        <title>Flask-прилжение</title>
+        <base href="http://127.0.0.1:5000/">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        <header id='hder'>
+            <nav class='top'>
+                <a class='intop' href="http://127.0.0.1:5000/login">войти</a>
+                <a class='intop' href="http://127.0.0.1:5000/signup">регистрация</a>
+                <a class='intop' href="http://127.0.0.1:5000/">главная</a>
+            </nav>
+            <form style='margin: 1.2% 1%;' method='post' action='/search'>
+                        <input class="query" type='text' name='input_query'  autocomplete="on" spellcheck lang='ru' placeholder="Seacrh here">
+            </form>
+        </header>
+        <div style='display: flex;'>
+                <div id='leftbox'>
+                    <nav>
+                        <a class='sidebar' href="">
+                        Алкогольные напитки
+                        </a>
+                        <br>
+                        <a class='sidebar' href="">
+                        Блюда из картофеля,овощей
+                        </a>
+                        <br>
+                        <a class='sidebar' href="">
+                        Блюда из круп
+                        </a>
+                        <br>
+                        <a class='sidebar' href="">
+                        Блюда из макаронных изделий
+                        </a>
+                        <br>
+                        <a class='sidebar' href="">
+                        Блюда из мясных продуктов
+                        </a>
+                        <br>
+                        <a class='sidebar' href="">
+                        Блюда из рыбы, морепродуктов и раков 
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Блюда из творога 
+                        </a>
+                        <br>
+                        <a class='sidebar' href="">
+                        Блюда из яиц 
+                        </a>     
+                        <br>
+                        <a class='sidebar' href="">
+                        Бобовые, орехи 
+                        </a>      
+                        <br>
+                        <a class='sidebar' href="">
+                        Быстрое питание 
+                        </a>    
+                        <br> 
+                        <a class='sidebar' href="">
+                        Вспомогательные продукты 
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Гарниры 
+                        </a>   
+                        <br>  
+                        <a class='sidebar' href="">
+                        Готовые завтраки
+                        </a>    
+                        <br> 
+                        <a class='sidebar' href="">
+                        Грибы
+                        </a>
+                        <br>   
+                        <a class='sidebar' href="">
+                        Диабетические продукты
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Жиры и масла
+                        </a>  
+                        <br> 
+                        <a class='sidebar' href="">
+                        Зерно и мука
+                        </a> 
+                        <br>  
+                        <a class='sidebar' href="">
+                        Икра и морские продукты
+                        </a>
+                        <br>
+                        <a class='sidebar' href="">
+                        Колбасы
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Кондитерские изделия
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Конфеты и шоколад
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Молочные продукты
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Мучные изделия
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Мясо и мясные продукты
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Напитки
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Овощи
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Рыба и рыбные продукты
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Сладкие блюда
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Соусы
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Супы
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Сыры
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Фрукты
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Хлеб, выпечка
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Холодные блюда
+                        </a>   
+                        <br>
+                        <a class='sidebar' href="">
+                        Ягоды , варенье
+                        </a>   
+                    </nav>
+                </div>
+                    <div id="midlebox">{% for row in result %}<p>{{row[0]}}</p>{% endfor %}</div>
+                    <div id="rightbox">
+                            <nav class="mobile-menu">
+                                    <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+                                    <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+                                    <div class="mobile-menu__container">
+                                    <ul class="mobile-menu__list">
+                                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">О нас</a></li>
+                                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакты</a></li>
+                                    </ul>
+                                    </div>
+                            </nav>
+                    </div>
+        </div>
+    </body>
+</html>
