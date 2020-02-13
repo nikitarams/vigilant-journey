@@ -6,6 +6,14 @@ Sign up
 {% endblock %}
 
 {% block content %}
+<head><link rel="stylesheet" href="static/style.css"></head>
+<header id='hder'>
+    <nav class='top'>
+        <a class='intop' href="http://127.0.0.1:5000/login">войти</a>
+        <a class='intop' href="http://127.0.0.1:5000/signup">регистрация</a>
+        <a class='intop' href="http://127.0.0.1:5000/">главная</a>
+    </nav>
+</header>
 <div class="container">
     <form class="form-signin" method="POST" action="/signup">
         <h2 class="form-signin-heading">Sign Up</h2>
